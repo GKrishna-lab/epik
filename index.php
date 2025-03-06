@@ -66,7 +66,7 @@
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="index.php">Home</a></li>
                     <li><a href="room.php">Room &amp; Facilities</a></li>
-                    <li><a href="reservation.html">Online Reservation</a></li>
+                    <li><a href="reservation.php">Online Reservation</a></li>
                     <li><a href="admin.php">Admin</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">

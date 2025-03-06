@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+        .logo-container {
+            background: #d3d3d3;
+            padding: 5px 10px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            text-align: left;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: rgb(20, 220, 100);
+        }
+        .tagline {
+            font-size: 12px;
+            color: rgb(5, 5, 5);
+        }
+        .profile-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: grey;
+            margin-bottom: 10px;
+        }
+        .user-info {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <div class="logo">Epik</div>
+        <div class="tagline">RECLAIM, RECYCLE, REUSE</div>
+    </div>
+    <div class="profile-container">
+        <div class="profile-pic"></div>
+        <h2>User Profile</h2>
+        <div class="user-info">Name: XXXXX</div>
+        <div class="user-info">Email: XYZ@example.com</div>
+        <div class="user-info">Phone: +1234567890</div>
+        <button>Edit Profile</button>
+        <button>Logout</button>
+    </div>
+</body>
+</html>

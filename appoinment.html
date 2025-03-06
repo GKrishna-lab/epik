@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book E-Waste Collection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            position: relative;
+            overflow-y: auto;
+        }
+        .logo-container {
+            background: #f5f3f3b7;
+            padding: 10px 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            text-align: left;
+        }
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            color: rgb(20, 220, 100);
+        }
+        .tagline {
+            font-size: 16px;
+            color: rgb(5, 5, 5);
+        }
+        .container {
+            background: #d3d3d3;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 100px;
+        }
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input, select, textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: calc(100% - 20px);
+            padding: 12px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <div class="logo">Epik</div>
+        <div class="tagline">RECLAIM, RECYCLE, REUSE</div>
+    </div>
+    <div class="container">
+        <h2>Book an E-Waste Collection</h2>
+        <p>Schedule a pickup for your electronic waste at your doorstep.</p>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <input type="date" required>
+            <input type="text" id="pickup-location" placeholder="Pickup Location" required>
+            <select required>
+                <option value="">Select E-Waste Type</option>
+                <option value="small">Small Electronics (Phones, Chargers, etc.)</option>
+                <option value="large">Large Electronics (TVs, Refrigerators, etc.)</option>
+                <option value="batteries">Batteries & Accessories</option>
+                <option value="electonics">PCB, RESISTORS, MOTHERBOARDS</option>
+                <option value="misc">Other E-Waste</option>
+            </select>
+            <textarea placeholder="Additional Notes (e.g., Quantity, Special Instructions)" rows="3"></textarea>
+            <button type="submit">Confirm Collection</button>
+        </form>
+    </div>
+</body>
+</html>
